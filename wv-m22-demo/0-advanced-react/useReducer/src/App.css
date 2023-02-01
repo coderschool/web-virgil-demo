@@ -1,0 +1,48 @@
+/* Applies border box sizing to the root element */
+:root {
+  box-sizing: border-box;
+}
+
+/* Tells all other elements and pseudo-element to inherit their box sizing */
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  width: 350px;
+}
+
+.form {
+  display: flex;
+  border: 1px solid #ddd;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  height: 300px;
+}
+
+input {
+  padding: 10px;
+}
+
+.submit {
+  padding: 10px;
+  background-color: #2980b9;
+  color: white;
+  font-size: large;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin: 0px;
+}

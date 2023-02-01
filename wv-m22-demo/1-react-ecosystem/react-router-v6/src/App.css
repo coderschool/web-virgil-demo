@@ -1,0 +1,15 @@
+/* Applies border box sizing to the root element */
+:root {
+  box-sizing: border-box;
+}
+
+/* Tells all other elements and pseudo-element to inherit their box sizing */
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
